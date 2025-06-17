@@ -32,3 +32,14 @@ console.log(typeof car);  // Output: object (this is a quirk in JavaScript)
 let salary;
 console.log(salary);  // Output: undefined
 console.log(typeof salary);  
+
+//symbol
+let sym1 = Symbol("identifier");
+let sym2 = Symbol("identifier");
+console.log(sym1 === sym2);  // Output: false (symbols are always unique)
+console.log(typeof sym1);  // Output: symbol
+console.log(sym1.description);  // Output: identifier (description of the symbol)
+// sym1 = "test"; // This is allowed, as we can reassign sym1 to a string
+// console.log(typeof sym1);  // Output: string (now sym1 is a string)
+sym1= Symbol("new identifier"); // This is allowed, as we can create a new symbol
+console.log(sym1.description);  // Output: new identifier (description of the new symbol)
