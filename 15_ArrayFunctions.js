@@ -27,3 +27,5 @@ console.log(allFruits); //[ 'apple', 'kiwi', 'orange', 'kiwi' ]
 let index = fruits.indexOf("banana");  
 console.log(index); //-1
 index = fruits.indexOf("kiwi");  
+let hasApple = fruits.includes("apple");  
+console.log(hasApple);  // Output: true
